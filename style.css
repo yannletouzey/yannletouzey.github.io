@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #cd9393;
+    color: #efdbdb;
+}
+header{
+    background: #533e3e;
+}
+h1{
+    text-align: center;
+}
+section{
+    width: 80%;
+    margin-left: 10%;
+}
+h2, p{
+    margin: 20px;
+}
+.logo-oclock{
+    height: 14px;
+}
+ul{
+    margin: 20px 30px;
+}
+li{
+    list-style-type: none;
+    display: inline;
+}
+li:not(:nth-child(1)){
+    margin-left: 10px;
+}
+@media screen and (min-width: 500px){
+    h1{
+        height: 80px;
+        font-size: 60px;
+    }
+}
+@media screen and (min-width: 700px){
+    h1{
+        text-align: left;
+        padding: 0 0 0 15%;
+        height: 80px;
+        font-size: 60px;
+    }
+}
