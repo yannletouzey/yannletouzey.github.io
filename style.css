@@ -25,14 +25,14 @@ h2, p{
 ul{
     margin: 20px 30px;
 }
-li{
+.languages li{
     list-style-type: none;
     display: inline;
 }
-li:not(:nth-child(1)){
+.languages li:not(:nth-child(1)){
     margin-left: 10px;
 }
-li img{
+.languages li img{
     width: 20px;
 }
 @media screen and (min-width: 500px){
