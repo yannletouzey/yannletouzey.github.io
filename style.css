@@ -35,6 +35,19 @@ ul{
 .languages li img{
     width: 20px;
 }
+.ul-websites li{
+    margin: 0 5px;
+    padding-bottom: 5px;
+}
+li a{
+    color: black;
+}
+li a:hover{
+    color: rgb(108, 78, 78);
+}
+.ul-websites{
+    list-style-image: url("./img/logo-short-cream.svg");
+}
 @media screen and (min-width: 500px){
     h1{
         height: 80px;
