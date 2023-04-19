@@ -14,7 +14,6 @@ html {
 }
 body {
   perspective: 1000px;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,6 +22,15 @@ body {
   width: 100%;
   height: 100vh;
   background: var(--background-color);
+}
+.body{
+  border: #0ff 1px solid;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
 }
 header {
   background: transparent;
@@ -52,8 +60,7 @@ h1 {
     bounce 0.3s 1.3s cubic-bezier(0, 0, 1, 1) forwards;
 }
 
-h2,
-p {
+h2{
   margin: 10px 20px;
   position: relative;
   z-index: 10;
@@ -98,6 +105,11 @@ p {
 main{
   perspective: 1000px;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+  padding: 2rem 0;
 }
 .banner-bottom{
   position: relative;
@@ -105,7 +117,7 @@ main{
   text-transform: uppercase;
   transform-origin: center;
   transform: rotateX(80deg);
-  margin: auto;
+  margin: 0 auto 2rem;
   display: flex;
   justify-content: center;
 }
@@ -115,14 +127,15 @@ main{
   position: relative;
   white-space: nowrap;
   font-size: 9.5vw;
-  font-stretch: 150%;
   color: transparent;
   -webkit-text-stroke: 3px #ceafaf;
   transform: scale(0);
   animation: appearSection 0.5s 1.4s cubic-bezier(0.57, 1.67, 0.64, 0.92) forwards;
 }
 footer {
+  position: relative;
   height: 5rem;
+  width: 100%;
   display: flex;
 }
 footer h3 {
@@ -191,7 +204,7 @@ footer h3 {
 .particles-js {
   position: absolute;
   top: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   left: 0;
   background: var(--background-color);
