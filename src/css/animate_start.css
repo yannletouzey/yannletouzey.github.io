@@ -1,0 +1,45 @@
+.box-container{
+	position: absolute;
+	z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.box{
+	position: absolute;
+	background: #000;
+	left: 50%;
+	transform-origin: center left;
+	/* transition-duration: 2s; */
+	/* transform: rotate(45deg); */
+	animation: moveDivOne 1s 1s forwards;
+	border-left: 1px solid #fff;
+}
+.box2{
+	border-right: 1px solid #fff;
+	position: absolute;
+	background: #000;
+	left: -50%;
+	transform-origin: center right;
+	/* transition-duration: 2s; */
+	/* transform: rotate(45deg); */
+	animation: moveDivTwo 1s 1s forwards;
+}
+@keyframes moveDivOne {
+	0%{
+		/* left: 50%; */
+	}
+	100%{
+		left: 1000%;
+		display: none;
+	}
+}
+@keyframes moveDivTwo {
+	0%{
+		/* left: -50%; */
+	}
+	100%{
+		left: -1000%;
+		display: none;
+	}
+}
