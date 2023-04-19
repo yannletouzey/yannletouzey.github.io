@@ -24,20 +24,18 @@ body {
   background: var(--background-color);
 }
 .body{
-  border: #0ff 1px solid;
   width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 }
 header {
-  background: transparent;
   position: relative;
   z-index: 10;
   height: var(--height-header);
   line-height: var(--height-header);
+  background: transparent;
 }
 .canvas-one {
   position: absolute;
@@ -45,12 +43,12 @@ header {
   left: 0;
 }
 .containerH1 {
-  animation: move 0.3s 1s ease-in forwards;
   position: relative;
   left: 50%;
   transform: translateX(-35%);
-  opacity: 0;
   width: 12rem;
+  opacity: 0;
+  animation: move 0.3s 1s ease-in forwards;
 }
 h1 {
   height: calc(var(--height-header) - 2rem);
@@ -61,9 +59,9 @@ h1 {
 }
 
 h2{
-  margin: 10px 20px;
   position: relative;
   z-index: 10;
+  margin: 10px 20px;
 }
 .logo-oclock {
   height: 14px;
@@ -105,11 +103,11 @@ h2{
 main{
   perspective: 1000px;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   overflow: hidden;
-  padding: 2rem 0;
 }
 .banner-bottom{
   position: relative;

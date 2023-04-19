@@ -1,19 +1,20 @@
 .container-slider {
-  position: relative;
   --width-carousel: 17rem;
   --height-carousel: 20rem;
   width: 100%;
   max-width: calc(var(--width-carousel) * 2);
   height: calc(var(--height-carousel) + ((var(--height-carousel) / 100) * 25));
   perspective: 1000px;
-  margin: 2rem auto;
+  margin: 0rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   transform: scale(0);
   animation: appearSection 0.5s 1.2s cubic-bezier(0.57, 1.67, 0.64, 0.92) forwards;
 }
 .carousel {
+  position: relative;
   transform-style: preserve-3d;
   width: calc(var(--width-carousel));
   height: calc(var(--height-carousel));
@@ -22,7 +23,7 @@
   position: absolute;
   z-index: 10;
   width: calc(var(--width-carousel));
-  height: var(--height-carousel);
+  height: calc(var(--height-carousel) - 0rem);
   text-align: center;
   border: 1px solid #575454;
   background-color: #222222;
@@ -38,15 +39,15 @@
   box-shadow: 0px 0px 80px 80px #fff;
 }
 .buttons {
-  margin-top: 2rem;
-}
-.btn {
-  margin: 0 2rem;
+  width: var(--width-carousel);
+  display: flex;
+  justify-content: space-around;
 }
 @media screen and (min-width: 500px) {
   .container-slider {
     height: var(--height-carousel);
     align-content: center;
+    margin-top: 3rem;
   }
   .face-carousel {
     width: var(--width-carousel);
@@ -66,6 +67,11 @@
   }
   .banner-bottom{
     margin-bottom: 5rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .container-slider{
+    margin-top: 6rem;
   }
 }
 .box-img {
