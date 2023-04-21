@@ -87,7 +87,7 @@
   .face-ground{
     width: calc(var(--width-carousel) + 4rem);
     height: calc(var(--width-carousel) + 4rem);
-    transform: rotateX(90deg) translateX(-50%) translateZ(-16rem);
+    transform: rotateX(90deg) translateX(-50%) translateZ(-15rem);
   }
 }
 .box-img {
