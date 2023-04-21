@@ -3,52 +3,56 @@
   --height-carousel: 20rem;
   width: 100%;
   max-width: calc(var(--width-carousel) * 2);
-  height: calc(var(--height-carousel) + ((var(--height-carousel) / 100) * 25));
+  height: 27rem;
   perspective: 1000px;
-  margin: 0rem auto;
+  margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   transform: scale(0);
   animation: appearSection 0.5s 1.2s cubic-bezier(0.57, 1.67, 0.64, 0.92) forwards;
 }
 .carousel {
-  position: relative;
+  margin: 3rem;
   transform-style: preserve-3d;
-  width: calc(var(--width-carousel));
-  height: calc(var(--height-carousel));
+  width: var(--width-carousel);
+  height: var(--height-carousel);
 }
 .face-carousel {
   position: absolute;
   z-index: 10;
   width: calc(var(--width-carousel));
-  height: calc(var(--height-carousel) - 0rem);
+  height: calc(var(--height-carousel) - 2rem);
   text-align: center;
   border: 1px solid #575454;
   background-color: #222222;
 }
 .face-ground{
   position: absolute;
-  width: calc(var(--width-carousel) + 3rem);
-  height: calc(var(--width-carousel) + 3rem);
+  width: var(--width-carousel);
+  height: var(--width-carousel);
   background-color: white;
   opacity: 0.2;
   left: 50%;
-  transform: rotateX(90deg) translateX(-50%) translateZ(-14rem);
-  box-shadow: 0px 0px 80px 80px #fff;
+  transform: rotateX(90deg) translateX(-50%) translateZ(-10rem);
+  box-shadow: 0px 0px 90px 90px #fff;
 }
 .buttons {
-  width: var(--width-carousel);
-  display: flex;
-  justify-content: space-around;
+  margin-top: 3rem;
+}
+.btn {
+  margin: 0 2rem;
+}
+@media screen and (min-width: 380px) {
+  .face-ground{
+    width: calc(var(--width-carousel) + 1rem);
+    height: calc(var(--width-carousel) + 1rem);
+    transform: rotateX(90deg) translateX(-50%) translateZ(-12rem);
+  }
+    
 }
 @media screen and (min-width: 500px) {
-  .container-slider {
-    height: var(--height-carousel);
-    align-content: center;
-    margin-top: 3rem;
-  }
   .face-carousel {
     width: var(--width-carousel);
   }
@@ -65,13 +69,25 @@
   .btn {
     margin: 0;
   }
-  .banner-bottom{
-    margin-bottom: 5rem;
+  
+  .face-ground{
+    width: calc(var(--width-carousel) + 2rem);
+    height: calc(var(--width-carousel) + 2rem);
+    transform: rotateX(90deg) translateX(-50%) translateZ(-13rem);
   }
 }
-@media screen and (min-width: 700px) {
-  .container-slider{
-    margin-top: 6rem;
+@media screen and (min-width: 600px) {
+  .face-ground{
+    width: calc(var(--width-carousel) + 3rem);
+    height: calc(var(--width-carousel) + 3rem);
+    transform: rotateX(90deg) translateX(-50%) translateZ(-14rem);
+  }
+}
+@media screen and (min-width: 800px) {
+  .face-ground{
+    width: calc(var(--width-carousel) + 4rem);
+    height: calc(var(--width-carousel) + 4rem);
+    transform: rotateX(90deg) translateX(-50%) translateZ(-16rem);
   }
 }
 .box-img {
@@ -111,7 +127,7 @@
   --size-btn: 3.25rem;
   width: var(--size-btn);
   height: var(--size-btn);
-  position: relative;
+  /* position: relative; */
   background: transparent;
   border: 0;
   cursor: pointer;
