@@ -35,8 +35,8 @@
   background-color: white;
   opacity: 0.2;
   left: 50%;
-  transform: rotateX(90deg) translateX(-50%) translateZ(-10rem);
-  box-shadow: 0px 0px 90px 90px #fff;
+  transform: rotateX(90deg) translateX(-50%) translateZ(-11rem);
+  box-shadow: 0px 0px 70px 70px #fff;
 }
 .buttons {
   margin-top: 3rem;
@@ -46,11 +46,11 @@
 }
 @media screen and (min-width: 380px) {
   .face-ground{
-    width: calc(var(--width-carousel) + 1rem);
-    height: calc(var(--width-carousel) + 1rem);
-    transform: rotateX(90deg) translateX(-50%) translateZ(-12rem);
+    width: calc(var(--width-carousel) + 0.5rem);
+    height: calc(var(--width-carousel) + 0.5rem);
+    box-shadow: 0px 0px 75px 75px #fff;
   }
-    
+  
 }
 @media screen and (min-width: 500px) {
   .face-carousel {
@@ -71,23 +71,31 @@
   }
   
   .face-ground{
-    width: calc(var(--width-carousel) + 2rem);
-    height: calc(var(--width-carousel) + 2rem);
-    transform: rotateX(90deg) translateX(-50%) translateZ(-13rem);
+    width: calc(var(--width-carousel) + 1rem);
+    height: calc(var(--width-carousel) + 1rem);
+    box-shadow: 0px 0px 80px 80px #fff;
   }
 }
 @media screen and (min-width: 600px) {
   .face-ground{
-    width: calc(var(--width-carousel) + 3rem);
-    height: calc(var(--width-carousel) + 3rem);
-    transform: rotateX(90deg) translateX(-50%) translateZ(-14rem);
+    width: calc(var(--width-carousel) + 1.5rem);
+    height: calc(var(--width-carousel) + 1.5rem);
+    box-shadow: 0px 0px 90px 90px #fff;
   }
 }
 @media screen and (min-width: 800px) {
   .face-ground{
-    width: calc(var(--width-carousel) + 4rem);
-    height: calc(var(--width-carousel) + 4rem);
-    transform: rotateX(90deg) translateX(-50%) translateZ(-15rem);
+    width: calc(var(--width-carousel) + 2rem);
+    height: calc(var(--width-carousel) + 2rem);
+    transform: rotateX(90deg) translateX(-50%) translateZ(-11rem);
+  }
+}
+@media screen and (min-height: 1050px) {
+  .face-ground{
+    width: calc(var(--width-carousel) + 6rem);
+    height: calc(var(--width-carousel) + 6rem);
+    transform: rotateX(90deg) translateX(-50%) translateZ(-20rem);
+    box-shadow: 0px 0px 100px 100px #fff;
   }
 }
 .box-img {
@@ -121,7 +129,6 @@
   width: 20px;
   height: 20px;
 }
-
 /* BUTTON */
 .btn {
   --size-btn: 3.25rem;
