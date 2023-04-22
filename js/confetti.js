@@ -2,9 +2,9 @@ import { Rectangle } from "./class/Confetti.js";
 
 const canvas = document.getElementById("canvas-one");
 
-const bounding = document.getElementById('h1').getBoundingClientRect()
+const bounding = document.getElementById('header__container--title').getBoundingClientRect()
 const CANVAS_WIDTH = bounding.left - ((bounding.width / 100) * 15);
-const CANVAS_HEIGHT = ((document.getElementById('h1').clientHeight / 3) * 2);
+const CANVAS_HEIGHT = ((document.getElementById('header__container--title').clientHeight / 3) * 2);
 
 const dpr = devicePixelRatio;
 canvas.width = CANVAS_WIDTH * devicePixelRatio;
