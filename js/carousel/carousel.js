@@ -2,9 +2,9 @@ export const carousel = () => {
   const prevBtn = document.getElementById("prev");
   const nextBtn = document.getElementById("next");
   const carousel = document.getElementById("carousel");
-  const faceGround = document.getElementById("face-carousel");
+  const data = carousel.clientWidth
   const faces = 4;
-  const offsetFace = (faces * 1.9) + (faces / 4);
+  const offsetFace = ((data/2) / 16);
   const lapDeg = 360;
   const degValue = lapDeg / faces;
   let deg = 0
@@ -27,4 +27,5 @@ export const carousel = () => {
     const newDegValue = degValue * index;
     element.style.transform = `rotateY(${newDegValue}deg) translateZ(${offsetFace}rem)`;
   }
+  console.log(data);
 };
