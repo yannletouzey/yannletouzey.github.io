@@ -4,7 +4,8 @@
 }
 :root {
   --height-header: 5rem;
-  --background-color: #0c0c0c;
+  --background-color: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(12,12,12,1) 35%, rgba(42,42,42,0.8463760504201681) 100%);
+  /* --background-color: #0c0c0c; */
 }
 *,
 html {
@@ -129,6 +130,7 @@ main{
 }
 .banner-bottom p span:hover{
   color: #ceafaf;
+  cursor: default;
 }
 .footer {
   --sizes-cube: 2rem;
