@@ -128,15 +128,17 @@ main{
   transform: scale(0);
   animation: appearSection 0.5s 1.4s cubic-bezier(0.57, 1.67, 0.64, 0.92) forwards;
 }
-footer {
+.footer {
   position: relative;
   height: 5rem;
   width: 100%;
   display: flex;
   background-color: transparent;
+  border: 1px solid purple;
 }
-footer h3 {
+.footer__title {
   opacity: 0;
+  border: 1px solid yellowgreen;
   transform: scale(0);
 }
 .cube-container {
@@ -146,7 +148,7 @@ footer h3 {
   margin: 0 10px;
   padding: 0 10px;
 }
-.contact-section {
+.footer__contact {
   transform: scale(0);
   height: 100%;
   width: 50%;
@@ -233,7 +235,7 @@ footer h3 {
     line-height: var(--height-header);
     font-size: 3.5rem;
   }
-  .contact-section {
+  .footer__contact {
     margin: auto 10rem;
   }
   .banner-bottom p{
