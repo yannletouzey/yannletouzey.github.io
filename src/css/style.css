@@ -128,30 +128,21 @@ main{
   transform: scale(0);
   animation: appearSection 0.5s 1.4s cubic-bezier(0.57, 1.67, 0.64, 0.92) forwards;
 }
-footer {
+.footer {
+  --sizes-cube: 2rem;
   position: relative;
   height: 5rem;
   width: 100%;
   display: flex;
   background-color: transparent;
 }
-footer h3 {
-  opacity: 0;
-  transform: scale(0);
-}
-.cube-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0 10px;
-  padding: 0 10px;
-}
-.contact-section {
+.footer__contact {
   transform: scale(0);
   height: 100%;
-  width: 50%;
-  max-width: 8rem;
+  width: 100%;
+  max-width: 30rem;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-around;
   margin: auto;
@@ -159,8 +150,52 @@ footer h3 {
     forwards;
   padding-bottom: 0;
 }
-.cube {
-  --sizes-cube: 2rem;
+.footer__contact--titles, .footer__contact--cubes {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+.footer__contact--titles{
+  position: absolute;
+  top: -1rem;
+}
+.footer__contact--title {
+  transition-duration: 0.5s;
+  height: 6rem;
+  /* width: 4rem; */
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: "Anton", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: absolute;
+  top: -0.5rem;
+  transform: scale(0);
+}
+.footer__contact--cube-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  padding: 0 10px;
+}
+/* #footer__contact--cube-container-one:hover #footer__contact--title-one{
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(.47,1.64,.41,.8);
+  transform: scale(1);
+}
+#footer__contact--cube-container-two:hover #footer__contact--title-two{
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(.47,1.64,.41,.8);
+  transform: scale(1);
+} */
+.show{
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(.47,1.64,.41,.8);
+  transform: scale(1);
+}
+.footer__contact--cube {
   width: var(--sizes-cube);
   height: var(--sizes-cube);
   position: relative;
@@ -233,8 +268,8 @@ footer h3 {
     line-height: var(--height-header);
     font-size: 3.5rem;
   }
-  .contact-section {
-    margin: auto 10rem;
+  .footer__contact {
+    /* margin: auto 10rem; */
   }
   .banner-bottom p{
     -webkit-text-stroke: 3px #ceafaf;

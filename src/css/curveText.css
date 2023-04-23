@@ -1,0 +1,17 @@
+/* .footer__contact--title{
+    height: 6rem;
+    width: 6rem;
+    display: flex;
+    justify-content: center;
+    position: relative; */
+/* } */
+.footer__contact--title p{
+    /* text-align: center;
+    display: flex;
+    position: absolute; */
+}
+.footer__contact--title p span{
+    /* position: absolute;
+    font-size: 1rem;
+    transform-origin: center 2rem; */
+}
