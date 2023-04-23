@@ -10,7 +10,6 @@ spanText.forEach((element) => {
 });
 
 
-const title = document.getElementById('title')
 function curveText(id) {
     const textWithId = document.getElementById('' + id)
     const text = document.getElementById('' + id).textContent
@@ -26,4 +25,35 @@ function curveText(id) {
     }
 }
 //Enter id tag text only (p/h1/h2/...)
-curveText("title")
+curveText("footer__contact--title-one")
+curveText("footer__contact--title-two")
+
+// show/hide title link contact
+const cubeContainerOne = document.getElementById("footer__contact--cube-container-one")
+const cubeContainerTwo = document.getElementById("footer__contact--cube-container-two")
+
+const titleOne = document.getElementById("footer__contact--title-one")
+const titleTwo = document.getElementById("footer__contact--title-two")
+
+const cubeOne = document.querySelector("#cube-one")
+const cubeTwo = document.querySelector("#cube-two")
+
+cubeContainerOne.addEventListener('mouseenter', ()=>{
+  titleOne.classList.add('show')
+})
+cubeContainerOne.addEventListener('mouseleave', ()=>{
+  titleOne.classList.remove('show')
+})
+cubeContainerTwo.addEventListener('mouseenter', ()=>{
+  titleTwo.classList.add('show')
+})
+cubeContainerTwo.addEventListener('mouseleave', ()=>{
+  titleTwo.classList.remove('show')
+})
+
+cubeOne.addEventListener('click', () => {
+  titleOne.classList.remove('show')
+})
+cubeTwo.addEventListener('click', () => {
+  titleTwo.classList.remove('show')
+})
