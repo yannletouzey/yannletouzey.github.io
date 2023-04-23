@@ -9,6 +9,18 @@ spanText.forEach((element) => {
   });
 });
 
+function addSpan(id) {
+  const textWithId = document.getElementById('' + id)
+  const text = document.getElementById('' + id).textContent
+  textWithId.innerHTML = ""
+  let textArray = Array.from(text)
+  for (let i = 0; i < textArray.length; i++) {
+      let e = textArray[i];
+      textWithId.innerHTML += "<span id="+ i +">" + e + "</span>"
+  }
+}
+//Enter id tag text only (p/h1/h2/...)
+addSpan('banner-bottom-p')
 
 function curveText(id) {
     const textWithId = document.getElementById('' + id)
