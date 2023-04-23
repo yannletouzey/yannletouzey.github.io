@@ -110,7 +110,6 @@ main{
   width: 100%;
   bottom: 0;
   transform-style: preserve-3d;
-  text-transform: uppercase;
   transform-origin: center;
   transform: rotateX(80deg);
   margin: auto;
@@ -129,7 +128,10 @@ main{
   animation: appearSection 0.5s 1.4s cubic-bezier(0.57, 1.67, 0.64, 0.92) forwards;
 }
 .banner-bottom p span:hover{
+  position: relative;
+  transform-style: preserve-3d;
   color: #ceafaf;
+  transform: translateY(10px);
 }
 .footer {
   --sizes-cube: 2rem;
@@ -183,16 +185,6 @@ main{
   margin: 0 10px;
   padding: 0 10px;
 }
-/* #footer__contact--cube-container-one:hover #footer__contact--title-one{
-  transition-duration: 0.5s;
-  transition-timing-function: cubic-bezier(.47,1.64,.41,.8);
-  transform: scale(1);
-}
-#footer__contact--cube-container-two:hover #footer__contact--title-two{
-  transition-duration: 0.5s;
-  transition-timing-function: cubic-bezier(.47,1.64,.41,.8);
-  transform: scale(1);
-} */
 .show{
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(.47,1.64,.41,.8);
