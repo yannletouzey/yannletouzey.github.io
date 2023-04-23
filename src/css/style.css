@@ -128,10 +128,7 @@ main{
   animation: appearSection 0.5s 1.4s cubic-bezier(0.57, 1.67, 0.64, 0.92) forwards;
 }
 .banner-bottom p span:hover{
-  position: relative;
-  transform-style: preserve-3d;
   color: #ceafaf;
-  transform: translateY(10px);
 }
 .footer {
   --sizes-cube: 2rem;
