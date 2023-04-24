@@ -14,14 +14,14 @@ particlesJS.load('particles-js', 'particles.json', function() {
 particlesJS('particles-js',{
     "particles": {
       "number": {
-        "value": 100,
+        "value": 200,
         "density": {
           "enable": true,
           "value_area": 500
         }
       },
       "color": {
-        "value": "#ffffff"
+        "value": "#ceafaf"
       },
       "shape": {
         "type": "start",
@@ -60,7 +60,7 @@ particlesJS('particles-js',{
       },
       "line_linked": {
         "enable": true,
-        "distance": 100,
+        "distance": 80,
         "color": "#ffffff",
         "opacity": 0.1,
         "width": 1

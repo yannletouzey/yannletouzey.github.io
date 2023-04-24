@@ -4,6 +4,7 @@
 }
 :root {
   --height-header: 5rem;
+  --color: #ceafaf;
   --background-color: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(12,12,12,1) 35%, rgba(42,42,42,0.8463760504201681) 100%);
   /* --background-color: #0c0c0c; */
 }
@@ -18,7 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: #ceafaf;
+  color: var(--color);
   font-family: "Fragmentcore";
   width: 100%;
   height: 100vh;
@@ -69,7 +70,7 @@ header {
   list-style-type: none;
 }
 .container-link a {
-  color: #ceafaf;
+  color: var(--color);
   text-align: center;
   font-size: 1.3rem;
 }
@@ -129,7 +130,7 @@ main{
   animation: appearSection 0.5s 1.4s cubic-bezier(0.57, 1.67, 0.64, 0.92) forwards;
 }
 .banner-bottom p span:hover{
-  color: #ceafaf;
+  color: var(--color);
   cursor: default;
 }
 .footer {
