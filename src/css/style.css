@@ -169,10 +169,9 @@ main{
 }
 .footer__contact--title {
   transition-duration: 0.5s;
-  height: 6rem;
+  height: 5rem;
   display: flex;
   justify-content: center;
-  position: relative;
   font-family: 'Sigmar', cursive;
   font-weight: 900;
   text-transform: uppercase;
