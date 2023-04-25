@@ -16,11 +16,12 @@ function addSpan(id) {
   let textArray = Array.from(text)
   for (let i = 0; i < textArray.length; i++) {
       let e = textArray[i];
-      textWithId.innerHTML += "<span id="+ i +">" + e + "</span>"
+      textWithId.innerHTML += `<span id=${i}>${e}</span>`
   }
 }
 //Enter id tag text only (p/h1/h2/...)
 addSpan('banner-bottom-p')
+addSpan('header__container--title')
 
 function curveText(id) {
     const textWithId = document.getElementById('' + id)

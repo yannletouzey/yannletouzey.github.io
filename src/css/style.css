@@ -5,8 +5,7 @@
 :root {
   --height-header: 5rem;
   --color: #ceafaf;
-  --background-color: linear-gradient(45deg, rgba(2,0,36,1) 0%, rgba(12,12,12,1) 35%, rgba(42,42,42,0.8463760504201681) 100%);
-  /* --background-color: #0c0c0c; */
+  --background-color: #0c0c0c;
 }
 *,
 html {
@@ -53,6 +52,9 @@ header {
   animation: move 0.3s 1s ease-in forwards;
 }
 .header__container--title {
+  font-family: "Anton", sans-serif;
+  color: transparent;
+  -webkit-text-stroke: 1px #ceafaf;
   font-size: 2rem;
   height: calc(var(--height-header) - 2rem);
   line-height: calc(var(--height-header) - 2rem);
@@ -129,9 +131,10 @@ main{
   transform: scale(0);
   animation: appearSection 0.5s 1.4s cubic-bezier(0.57, 1.67, 0.64, 0.92) forwards;
 }
-.banner-bottom p span:hover{
+.banner-bottom p span:hover, .header__container--title span:hover{
   color: var(--color);
   cursor: default;
+  /* text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00; */
 }
 .footer {
   --sizes-cube: 2rem;
@@ -189,6 +192,12 @@ main{
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(.47,1.64,.41,.8);
   transform: scale(1);
+  animation: shadow 0.4s ease-out;
+}
+@keyframes shadow {
+  to{
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;
+  }
 }
 .footer__contact--cube {
   width: var(--sizes-cube);
@@ -262,9 +271,6 @@ main{
     height: var(--height-header);
     line-height: var(--height-header);
     font-size: 3.5rem;
-  }
-  .footer__contact {
-    /* margin: auto 10rem; */
   }
   .banner-bottom p{
     -webkit-text-stroke: 3px #ceafaf;
