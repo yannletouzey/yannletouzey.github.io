@@ -5,16 +5,17 @@
   max-width: calc(var(--width-carousel) * 2);
   height: 27rem;
   perspective: 1000px;
-  margin: auto;
+  margin: 0.5rem auto 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   transform: scale(0);
   animation: appearSection 0.5s 1.2s cubic-bezier(0.57, 1.67, 0.64, 0.92) forwards;
+  padding-top: 0.5rem;
 }
 .carousel {
-  margin: 3rem;
+  margin: 2rem 3rem;
   transform-style: preserve-3d;
   width: var(--width-carousel);
   height: var(--height-carousel);
@@ -25,7 +26,6 @@
   width: calc(var(--width-carousel));
   height: calc(var(--height-carousel) - 2rem);
   text-align: center;
-  border: 1px solid #575454;
   background-color: #222222;
 }
 .face-ground{
@@ -36,7 +36,7 @@
   opacity: 0.2;
   left: 50%;
   transform: rotateX(90deg) translateX(-50%) translateZ(-11rem);
-  box-shadow: 0px 0px 70px 70px #fff;
+  box-shadow: 0px 0px 60px 60px #fff;
 }
 .buttons {
   margin-top: 3rem;
@@ -45,12 +45,15 @@
   margin: 0 2rem;
 }
 @media screen and (min-width: 380px) {
+  .container-slider {
+    margin: 1rem auto 0;
+  }
+  
   .face-ground{
     width: calc(var(--width-carousel) + 0.5rem);
     height: calc(var(--width-carousel) + 0.5rem);
-    box-shadow: 0px 0px 75px 75px #fff;
+    box-shadow: 0px 0px 65px 65px #fff;
   }
-  
 }
 @media screen and (min-width: 500px) {
   .face-carousel {
@@ -69,7 +72,6 @@
   .btn {
     margin: 0;
   }
-  
   .face-ground{
     width: calc(var(--width-carousel) + 1rem);
     height: calc(var(--width-carousel) + 1rem);
@@ -84,10 +86,27 @@
   }
 }
 @media screen and (min-width: 800px) {
+  .container-slider {
+    padding-top: 1.5rem;
+  }  
   .face-ground{
     width: calc(var(--width-carousel) + 2rem);
     height: calc(var(--width-carousel) + 2rem);
     transform: rotateX(90deg) translateX(-50%) translateZ(-11rem);
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container-slider {
+    margin: 2rem auto;
+  }
+  .face-ground{
+    width: calc(var(--width-carousel) + 3rem);
+    height: calc(var(--width-carousel) + 3rem);
+  }
+}
+@media screen and (min-width: 1100px) {
+  .container-slider {
+    margin: 5rem auto;
   }
 }
 @media screen and (min-height: 1050px) {
