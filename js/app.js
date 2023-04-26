@@ -33,7 +33,7 @@ function curveText(id) {
     let d = -deg / 2
     for (let i = 0; i < textArray.length; i++) {
         d = Math.trunc(d)
-        textWithId.innerHTML += `<span id="${textArray[i]}" style="transform: rotate(${d}deg);">${textArray[i]}</span>`
+        textWithId.innerHTML += `<span id="${textArray[i]}" style="transform: rotate(${d/1.4}deg);">${textArray[i]}</span>`
         d += partDeg
     }
 }
