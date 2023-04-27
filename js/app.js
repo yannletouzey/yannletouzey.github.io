@@ -9,6 +9,7 @@ spanText.forEach((element) => {
   });
 });
 
+// Add span
 function addSpan(id) {
   const textWithId = document.getElementById('' + id)
   const text = document.getElementById('' + id).textContent
@@ -19,10 +20,10 @@ function addSpan(id) {
       textWithId.innerHTML += `<span id=${i}>${e}</span>`
   }
 }
-//Enter id tag text only (p/h1/h2/...)
 addSpan('banner-bottom-p')
 addSpan('header__container--title')
 
+// Curve text
 function curveText(id) {
     const textWithId = document.getElementById('' + id)
     const text = document.getElementById('' + id).textContent
@@ -37,7 +38,6 @@ function curveText(id) {
         d += partDeg
     }
 }
-//Enter id tag text only (p/h1/h2/...)
 curveText("footer__contact--title-one")
 curveText("footer__contact--title-two")
 
