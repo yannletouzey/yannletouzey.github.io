@@ -134,6 +134,7 @@ main{
 }
 .header__container--title span:hover{
   color: var(--color);
+  cursor: default;
 }
 .banner-bottom p span:hover{
   -webkit-text-stroke: 2px rgb(255, 77, 0);
@@ -164,14 +165,10 @@ main{
     forwards;
   padding-bottom: 0;
 }
-.footer__contact--titles, .footer__contact--cubes {
+.footer__contact--cubes {
   display: flex;
   width: 100%;
   justify-content: space-around;
-}
-.footer__contact--titles{
-  position: absolute;
-  top: -1rem;
 }
 .footer__contact--title {
   transition-duration: 0.5s;

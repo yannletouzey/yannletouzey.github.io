@@ -1,8 +1,8 @@
 .container-slider {
-  --width-carousel: 17rem;
-  --height-carousel: 20rem;
+  --width: 17rem;
+  --height: 20rem;
   width: 100%;
-  max-width: calc(var(--width-carousel) * 2);
+  max-width: calc(var(--width) * 2);
   height: 27rem;
   perspective: 1000px;
   margin: 0.5rem auto 0;
@@ -17,21 +17,21 @@
 .carousel {
   margin: 2rem 3rem;
   transform-style: preserve-3d;
-  width: var(--width-carousel);
-  height: var(--height-carousel);
+  width: var(--width);
+  height: var(--height);
 }
 .face-carousel {
   position: absolute;
   z-index: 10;
-  width: calc(var(--width-carousel));
-  height: calc(var(--height-carousel) - 2rem);
+  width: var(--width);
+  height: calc(var(--height) - 2rem);
   text-align: center;
   background-color: #222222;
 }
 .face-ground{
   position: absolute;
-  width: var(--width-carousel);
-  height: var(--width-carousel);
+  width: var(--width);
+  height: var(--width);
   background-color: white;
   opacity: 0.2;
   left: 50%;
@@ -50,14 +50,14 @@
   }
   
   .face-ground{
-    width: calc(var(--width-carousel) + 0.5rem);
-    height: calc(var(--width-carousel) + 0.5rem);
+    width: calc(var(--width) + 0.5rem);
+    height: calc(var(--width) + 0.5rem);
     box-shadow: 0px 0px 65px 65px #fff;
   }
 }
 @media screen and (min-width: 500px) {
   .face-carousel {
-    width: var(--width-carousel);
+    width: var(--width);
   }
   .buttons {
     margin-top: 0;
@@ -73,15 +73,15 @@
     margin: 0;
   }
   .face-ground{
-    width: calc(var(--width-carousel) + 1rem);
-    height: calc(var(--width-carousel) + 1rem);
+    width: calc(var(--width) + 1rem);
+    height: calc(var(--width) + 1rem);
     box-shadow: 0px 0px 80px 80px #fff;
   }
 }
 @media screen and (min-width: 600px) {
   .face-ground{
-    width: calc(var(--width-carousel) + 1.5rem);
-    height: calc(var(--width-carousel) + 1.5rem);
+    width: calc(var(--width) + 1.5rem);
+    height: calc(var(--width) + 1.5rem);
     box-shadow: 0px 0px 90px 90px #fff;
   }
 }
@@ -90,8 +90,8 @@
     padding-top: 1.5rem;
   }  
   .face-ground{
-    width: calc(var(--width-carousel) + 2rem);
-    height: calc(var(--width-carousel) + 2rem);
+    width: calc(var(--width) + 2rem);
+    height: calc(var(--width) + 2rem);
     transform: rotateX(90deg) translateX(-50%) translateZ(-11rem);
   }
 }
@@ -100,8 +100,9 @@
     margin: 2rem auto;
   }
   .face-ground{
-    width: calc(var(--width-carousel) + 3rem);
-    height: calc(var(--width-carousel) + 3rem);
+    width: calc(var(--width) + 3rem);
+    height: calc(var(--width) + 3rem);
+    transform: rotateX(90deg) translateX(-50%) translateZ(-14rem);
   }
 }
 @media screen and (min-width: 1100px) {
@@ -111,16 +112,16 @@
 }
 @media screen and (min-height: 1050px) {
   .face-ground{
-    width: calc(var(--width-carousel) + 6rem);
-    height: calc(var(--width-carousel) + 6rem);
+    width: calc(var(--width) + 6rem);
+    height: calc(var(--width) + 6rem);
     transform: rotateX(90deg) translateX(-50%) translateZ(-20rem);
     box-shadow: 0px 0px 100px 100px #fff;
   }
 }
 .box-img {
   position: relative;
-  width: calc((var(--width-carousel) - 0.5rem) - 1.5rem);
-  height: calc((var(--width-carousel) / 16) * 9);
+  width: calc((var(--width) - 0.5rem) - 1.5rem);
+  height: calc((var(--width) / 16) * 9);
   left: 50%;
   top: calc(1.5rem / 2);
   transform: translateX(-50%);

@@ -27,5 +27,4 @@ export const carousel = () => {
     const newDegValue = degValue * index;
     element.style.transform = `rotateY(${newDegValue}deg) translateZ(${offsetFace}rem)`;
   }
-  console.log(data);
 };
