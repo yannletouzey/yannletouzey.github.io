@@ -13,11 +13,11 @@ export const carousel = () => {
     params.style.transform = `rotateY(${deg}deg)`;
   };
   prevBtn.addEventListener("click", () => {
-    deg += degValue;
+    deg -= degValue;
     slide(carousel);
   });
   nextBtn.addEventListener("click", () => {
-    deg -= degValue;
+    deg += degValue;
     slide(carousel);
   });
   const allFaces = document.querySelectorAll(".face-carousel");
