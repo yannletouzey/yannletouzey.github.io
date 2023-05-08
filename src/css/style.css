@@ -118,7 +118,6 @@ main{
   justify-content: center;
 }
 .banner-bottom p{
-  /* text-align: center; */
   font-family: 'Sigmar', cursive;
   position: relative;
   white-space: nowrap;

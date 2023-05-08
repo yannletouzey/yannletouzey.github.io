@@ -1,5 +1,4 @@
 import { spanText } from "./link/animateLink.js"
-import { animateBtn } from "./btn/animationBtn.js";
 import { addSpan, curveText } from "./utils.js";
 import { showText } from "./showText/showText.js";
 
