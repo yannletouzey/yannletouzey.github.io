@@ -1,5 +1,5 @@
 export const animateBtn = () =>{
-    const linkMore = document.querySelectorAll('.link-more')
+    const linkMore = document.querySelectorAll('.btn-more')
     linkMore.forEach(element => {
         element.addEventListener('mouseenter', ()=>{
             element.style.animationName = 'animateBtn'
