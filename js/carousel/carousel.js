@@ -4,7 +4,7 @@ export const carousel = () => {
   const carousel = document.getElementById("main__container--carousel");
   const data = carousel.clientWidth
   const faces = 4;
-  const offsetFace = ((data/2) / 16);
+  const offsetFace = ((data / 2) / 16) + 0.08;
   const lapDeg = 360;
   const degValue = lapDeg / faces;
   let deg = 0
@@ -17,13 +17,11 @@ export const carousel = () => {
     current--
     deg -= degValue;
     slide(carousel);
-    console.log(current);
   });
   nextBtn.addEventListener("click", () => {
     current++
     deg += degValue;
     slide(carousel);
-    console.log(current);
   });
   const allFaces = document.querySelectorAll(".main__container--carousel-face");
   
