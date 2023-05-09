@@ -121,7 +121,7 @@ main{
   font-family: 'Sigmar', cursive;
   position: relative;
   white-space: nowrap;
-  font-size: 10.2vw;
+  font-size: 9vw;
   color: transparent;
   -webkit-text-stroke: 1px #ceafaf;
   transform: scale(0);

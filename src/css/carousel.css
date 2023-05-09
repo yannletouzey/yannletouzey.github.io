@@ -1,5 +1,5 @@
 .main__container--slider {
-  --width: 19rem;
+  --width: 20rem;
   --height: 20rem;
   width: 100%;
   max-width: calc(var(--width) * 2);
@@ -16,7 +16,8 @@
 .main__container--carousel {
   margin: 1.5rem auto;
   transform-style: preserve-3d;
-  width: var(--width);
+  width: 100%;
+  max-width: var(--width);
   height: var(--height);
 }
 .main__container--carousel-face {
@@ -259,7 +260,7 @@
     width: calc(var(--width) + 0.5rem);
     height: calc(var(--width) + 0.5rem);
     box-shadow: 0px 0px 65px 65px #fff;
-    transform: rotateX(90deg) translateX(-50%) translateZ(-15rem);
+    /* transform: rotateX(90deg) translateX(-50%) translateZ(-14rem); */
   }
 }
 @media screen and (min-width: 31rem) {
@@ -285,7 +286,7 @@
   .face-ground{
     width: calc(var(--width) + 1rem);
     height: calc(var(--width) + 1rem);
-    box-shadow: 0px 0px 80px 80px #fff;
+    box-shadow: 0px 0px 70px 70px #fff;
   }
 }
 @media screen and (min-width: 35rem) {
@@ -309,7 +310,7 @@
   .face-ground{
     width: calc(var(--width) + 1.5rem);
     height: calc(var(--width) + 1.5rem);
-    box-shadow: 0px 0px 90px 90px #fff;
+    box-shadow: 0px 0px 75px 75px #fff;
   }
 }
 @media screen and (min-width: 42rem) {
@@ -321,14 +322,14 @@
   .face-ground{
     width: calc(var(--width) + 2rem);
     height: calc(var(--width) + 2rem);
-    transform: rotateX(90deg) translateX(-50%) translateZ(-11rem);
+    /* transform: rotateX(90deg) translateX(-50%) translateZ(-11rem); */
   }
 }
 @media screen and (min-width: 62rem) {
   .face-ground{
     width: calc(var(--width) + 3rem);
     height: calc(var(--width) + 3rem);
-    transform: rotateX(90deg) translateX(-50%) translateZ(-14rem);
+    /* transform: rotateX(90deg) translateX(-50%) translateZ(-14rem); */
   }
 }
 /* Media height */
@@ -336,7 +337,7 @@
   .face-ground{
     width: calc(var(--width) + 6rem);
     height: calc(var(--width) + 6rem);
-    transform: rotateX(90deg) translateX(-50%) translateZ(-20rem);
-    box-shadow: 0px 0px 100px 100px #fff;
+    /* transform: rotateX(90deg) translateX(-50%) translateZ(-14rem); */
+    box-shadow: 0px 0px 80px 80px #fff;
   }
 }
