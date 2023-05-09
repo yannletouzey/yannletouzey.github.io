@@ -6,7 +6,7 @@ import { showText } from "./showText/showText.js";
 spanText()
 
 // Animate btn => more info
-animateBtn()
+// animateBtn()
 
 // Add span
 addSpan('banner-bottom-p')
