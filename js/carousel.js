@@ -4,7 +4,8 @@ export const carousel = () => {
   const carousel = document.getElementById("main__container--carousel");
   const data = carousel.clientWidth
   const faces = 4;
-  const offsetFace = ((data / 2) / 16) + 0.08;
+  const offsetFace = ((data / 2) / 16);
+  // const offsetFace = ((data / 2) / 16) + 0.08;
   const lapDeg = 360;
   const degValue = lapDeg / faces;
   let deg = 0
