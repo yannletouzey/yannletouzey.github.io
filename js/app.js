@@ -1,12 +1,13 @@
-import { spanText } from "./link/animateLink.js"
+import { spanText } from "./animateLink.js"
 import { addSpan, curveText } from "./utils.js";
-import { showText } from "./showText/showText.js";
+import { showText } from "./showText.js";
+import { carousel } from "./carousel.js";
+
+// Animation carousel
+carousel();
 
 // Add span each letter text
 spanText()
-
-// Animate btn => more info
-// animateBtn()
 
 // Add span
 addSpan('banner-bottom-p')

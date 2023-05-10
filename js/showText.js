@@ -9,22 +9,21 @@ export const showText = () => {
     const cubeTwo = document.querySelector("#cube-two")
 
     cubeContainerOne.addEventListener('mouseenter', ()=>{
-    titleOne.classList.add('show')
+        titleOne.classList.add('show')
     })
     cubeContainerOne.addEventListener('mouseleave', ()=>{
-    titleOne.classList.remove('show')
+        titleOne.classList.remove('show')
     })
     cubeContainerTwo.addEventListener('mouseenter', ()=>{
-    titleTwo.classList.add('show')
+        titleTwo.classList.add('show')
     })
     cubeContainerTwo.addEventListener('mouseleave', ()=>{
-    titleTwo.classList.remove('show')
+        titleTwo.classList.remove('show')
     })
-
     cubeOne.addEventListener('click', () => {
-    titleOne.classList.remove('show')
+        titleOne.classList.remove('show')
     })
     cubeTwo.addEventListener('click', () => {
-    titleTwo.classList.remove('show')
+        titleTwo.classList.remove('show')
     })
 }

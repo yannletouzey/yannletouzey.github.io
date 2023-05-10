@@ -7,8 +7,8 @@ const CANVAS_WIDTH = bounding.left - ((bounding.width / 100) * 15);
 const CANVAS_HEIGHT = ((document.getElementById('header__container--title').clientHeight / 3) * 2);
 
 const dpr = devicePixelRatio;
-canvas.width = CANVAS_WIDTH * devicePixelRatio;
-canvas.height = CANVAS_HEIGHT * devicePixelRatio;
+canvas.width = CANVAS_WIDTH * dpr;
+canvas.height = CANVAS_HEIGHT * dpr;
 
 canvas.style.setProperty("width", CANVAS_WIDTH + "px");
 canvas.style.setProperty("height", CANVAS_HEIGHT + "px");
